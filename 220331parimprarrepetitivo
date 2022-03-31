@@ -1,0 +1,31 @@
+/******************************************************************************
+                              Par o impar funcion repetitivo
+*******************************************************************************/
+
+#include <iostream>
+using namespace std;
+void getparimpar(int x){
+    int CntPrs = 0;
+	int CntImp = 0;
+    if(x%2==0){
+        cout<<"Par \n";
+        CntPrs= (CntPrs+ 1)
+    }else{
+        cout<<"Impar \n";
+        CntImp = (CntImp + 1);
+    }
+}
+
+int main(int argc, char** argv){
+    int nmr;
+    int otro;
+    
+    do{
+    cout<<"Ingrese el numero:";
+    cin>>nmr;
+    getparimpar(nmr);
+    cout<<"Si desea otro ingrese 1:";
+    cin>>otro;
+    }while(otro==1);
+return 0;
+}
