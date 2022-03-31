@@ -1,0 +1,42 @@
+/******************************************************************************
+    Par impar repetitivo con contador de pares e impares
+*******************************************************************************/
+
+#include <iostream>
+
+using namespace std;
+	int N;
+	int x;
+	int y;
+	int R;
+int Funperf(int A){
+	if(A%2==0){
+ 		R=0;}
+	else{
+		R=1;}
+	return R;	
+	}
+int main(int argc, char** argv) {
+	int otro;
+	int CntPrs = 0;
+	int CntImp = 0;
+	do{
+	    cout<<"Ingrese el numero:\n";
+	cin>> x;
+	N=Funperf(x);
+	if(N==1){
+		cout<<"impar\n";
+		CntImp = (CntImp + 1);
+	}
+	else{
+		cout<<"par\n";
+		CntPrs= (CntPrs+1);
+	}
+	
+	cout<<"Si desea otro ingrese 1:\n";
+	cin>>otro;
+	}while(otro==1);
+	cout<<"La cantidad de pares fue:"<<CntPrs<<"\n";
+	cout<<"La cantidad de impares fue:"<<CntImp<<"\n";
+	return 0;
+}
